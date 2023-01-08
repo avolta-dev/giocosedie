@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author monica
+ * @author MC
  */
 public class TestGiocoSedie {
     private final static int NUMSEDIE = 15;

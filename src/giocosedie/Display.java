@@ -3,13 +3,7 @@ package giocosedie;
 class Display extends Thread
 
 {
-	//
-	// Si noti che ciascuna sedia � acceduta attraverso un monitor separato.
-	//
 	private Posto sedie[];
-	//
-	// endgame non necessit� di sincronizzazione, � acceduta dal solo thread display.
-	//
 	private boolean endgame;
 
 	public Display(Posto sedie[]) {
@@ -30,9 +24,7 @@ class Display extends Thread
 				sleep((int) (Math.random() * 250));
 
 				for (int i = 0; i < sedie.length; i++) {
-					//
-					// Pu� capitare che una qualche sedia si aggiorni durante la stampa.
-					//
+				
 					if (sedie[i].libero())
 						System.out.print("0");
 					else {
