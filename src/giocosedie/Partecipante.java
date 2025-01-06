@@ -3,7 +3,6 @@ package giocosedie;
 class Partecipante extends Thread
 
 {
-
 	Posto sedie[];
 
 	public Partecipante(Posto sedie[]) {
